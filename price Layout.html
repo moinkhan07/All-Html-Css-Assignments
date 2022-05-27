@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Layout</title>
+    <style>
+         #heading{
+       width: 33%;
+       text-align: center;
+       margin: auto;
+      }
+      #heading p{
+        color: grey;
+      }
+      #cards-section{
+          width: 60%;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: auto;
+          gap: 20px;
+         margin: auto;
+        text-align: center;
+      }
+      #cards-section>div{
+          border-radius: 10px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      h2+h1+p {
+        font-style: italic;
+        margin-top: -20px;
+        font-size: 13px;
+      }
+      button{
+        background-color: transparent;
+        font-size: 20px;
+        color: blue;
+        border-color:blue;
+        padding:10px 30px 10px 30px;
+        border-radius: 10px;
+      }
+       h2+h1+p+p{
+        padding: 4px 30px 20px 30px;
+        font: 22px;
+        line-height: 30px; 
+      } 
+      #cards-section>div:nth-child(1)>h1{
+        color: green;
+      }
+      #cards-section>div:nth-child(2)>h1{
+        color: orange;
+      }
+      #cards-section>div:nth-child(3)>h1{
+        color: blue;
+      }
+      @media all and (min-width: 480px) and (max-width: 720px){
+        #cards-section{
+          width: 95%;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(2,auto);
+      }
+      #heading{
+          width: 70%;
+      }
+      #heading>h1{
+        font-size: 25px;
+      }
+      }
+
+
+      @media all and (min-width: 320px) and (max-width: 479px){
+        #cards-section{
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: repeat(3,auto);
+      }
+      #heading{
+          width: 60%;
+      }
+      #heading>h1{
+        font-size: 20px;
+      }
+
+      }
+
+    </style>
+</head>
+<body>
+     <div id="heading">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+    <div id="cards-section">
+        <div>
+            <h2>Starter Plan</h2>
+            <h1>Free</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button>
+          </div>
+          <div>
+            <h2>Starter Plan</h2>
+            <h1>$39.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button>
+          </div>
+          <div>
+            <h2>Starter Plan</h2>
+            <h1>$59.00</h1>
+            <p>Per month</p>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website</p>
+            <button>Start Now</button>
+          </div>
+        </div>
+</body>
+</html>
