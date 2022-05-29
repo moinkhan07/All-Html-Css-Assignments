@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Lab</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 0px 100px 0px 50px;
+        text-align: center;
+      }
+      #header > div {
+        display: flex;
+      }
+      #header > div > h1 {
+        height: 100%;
+        background-color: blueviolet;
+        padding: 6px 15px;
+        color: white;
+      }
+      #header > div:nth-child(2) {
+        width: 50%;
+        justify-content: space-evenly;
+        font-weight: 600;
+      }
+      #header > div:nth-child(2) > p:hover {
+        cursor: pointer;
+        color: rgb(98, 98, 253);
+      }
+      #header > div:last-child > p:first-child {
+        color: rgb(98, 98, 253);
+      }
+
+      .main {
+        width: 90%;
+        display: flex;
+        margin: 70px auto auto auto;
+        justify-content: space-between;
+      }
+      .main>div{
+        width: 45%;
+      }
+      h5 {
+        color: rgb(92, 92, 250);
+        margin-bottom: 10px;
+      }
+      .main > div > h1 {
+        margin-bottom: 20px;
+      }
+      .main > div > p {
+        margin-top: 20px;
+        color: grey;
+        font-size: 17px;
+        line-height: 28px;
+      }
+      .video{
+        display: flex;
+        margin-top: 15px;
+      }
+      .video> img {
+        width: 30%;
+      }
+      .video> h3 {
+        color: rgb(46, 46, 46);
+        margin: 20px 15px;
+      }
+      .main>div:nth-child(2){
+        margin-top: -60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+     .main>div:nth-child(2)>div{
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      margin-top: 20px;
+      border-radius: 5px;
+       width: 45%;
+       margin-right: 22px;
+     }
+     .main>div:nth-child(2)>div>img{
+       width: 40%;
+       padding: 20px 0px 0px 20px;
+     }
+     .main>div:nth-child(2)>div>h3{
+       margin: 10px 0px;
+       padding-left: 20px;
+     }
+     .main>div:nth-child(2)>div>p{
+       color: grey;
+       line-height: 25px;
+       padding: 0px 0px 35px 20px;
+       width: 80%;
+       text-align: left;
+     }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <h1>StudyLab</h1>
+      </div>
+      <div>
+        <p>Home</p>
+        <p>About</p>
+        <p>Course</p>
+        <p>Instructor</p>
+        <p>Blog</p>
+        <p>Contact</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div>
+        <h5>WELCOME TO STUDYLAB</h5>
+        <h1>We Are StudyLab An Online Learning Center</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          expedita fuga fugit facilis vel in ratione repudiandae odio, esse eius
+          delectus, optio fugiat culpa deleniti asperiores sint! Debitis, ipsam
+          consectetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          fugiat iusto voluptatibus ex provident voluptatum asperiores earum,
+          beatae magni eveniet pariatur. Alias illo eos dolore dolor recusandae.
+          Veritatis praesentium ut nesciunt officia, autem soluta blanditiis!
+        </p>
+        <div class="video" >
+          <img src="http://surl.li/cbscn" alt="Error" />
+          <h3>Learn Anything From StudyLab, Watch Video</h3>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="https://i.pinimg.com/736x/af/d3/ee/afd3ee6ff6055ee6fb0948c71f66f522.jpg" alt="Error">
+          <h3>Top Quality content</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+          <img src="https://i.pinimg.com/736x/af/d3/ee/afd3ee6ff6055ee6fb0948c71f66f522.jpg" alt="Error">
+          <h3>Top Quality content</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+          <img src="https://i.pinimg.com/736x/af/d3/ee/afd3ee6ff6055ee6fb0948c71f66f522.jpg" alt="Error">
+          <h3>Top Quality content</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+          <img src="https://i.pinimg.com/736x/af/d3/ee/afd3ee6ff6055ee6fb0948c71f66f522.jpg" alt="Error">
+          <h3>Top Quality content</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
